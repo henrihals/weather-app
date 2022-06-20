@@ -22,4 +22,4 @@ HTML - SASS - JavaScript
 
 **Github : https://github.com/henrihals/weather-app.git
 
-**Internet : 
+**Internet : https://henrihals.github.io/weather-app/
