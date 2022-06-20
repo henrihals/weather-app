@@ -73,35 +73,35 @@ submit.addEventListener("click", async () => {
                 img1.src = url1;
                 const day1 = new Date
                 day1.setTime(day1.getTime() + 24 * 3600 * 1000);
-                document.querySelector("#days1").innerHTML = day1.getDate() + " / " + day1.getMonth();
+                document.querySelector("#days1").innerHTML = day1.getDate() + " / " + (day1.getMonth() + 1);
                 const clouds2 = data.list[15].main.temp;
                 const icon2 = data.list[15].weather[0].icon;
                 const url2 = `http://openweathermap.org/img/wn/${icon2}@2x.png`;
                 img2.src = url2;
                 const day2 = new Date
                 day2.setTime(day2.getTime() + 48 * 3600 * 1000);
-                document.querySelector("#days2").innerHTML = day2.getDate() + " / " + day2.getMonth();
+                document.querySelector("#days2").innerHTML = day2.getDate() + " / " + (day2.getMonth() + 1);
                 const clouds3 = data.list[23].main.temp;
                 const icon3 = data.list[23].weather[0].icon;
                 const url3 = `http://openweathermap.org/img/wn/${icon3}@2x.png`;
                 img3.src = url3;
                 const day3 = new Date
                 day3.setTime(day3.getTime() + 72 * 3600 * 1000);
-                document.querySelector("#days3").innerHTML = day3.getDate() + " / " + day3.getMonth();
+                document.querySelector("#days3").innerHTML = day3.getDate() + " / " + (day3.getMonth() + 1);
                 const clouds4 = data.list[31].main.temp;
                 const icon4 = data.list[31].weather[0].icon;
                 const url4 = `http://openweathermap.org/img/wn/${icon4}@2x.png`;
                 img4.src = url4;
                 const day4 = new Date
                 day4.setTime(day4.getTime() + 96 * 3600 * 1000);
-                document.querySelector("#days4").innerHTML = day4.getDate() + " / " + day4.getMonth();
+                document.querySelector("#days4").innerHTML = day4.getDate() + " / " + (day4.getMonth() + 1);
                 const clouds5 = data.list[39].main.temp;
                 const icon5 = data.list[39].weather[0].icon;
                 const url5 = `http://openweathermap.org/img/wn/${icon5}@2x.png`;
                 img5.src = url5;
                 const day5 = new Date
                 day5.setTime(day5.getTime() + 120 * 3600 * 1000);
-                document.querySelector("#days5").innerHTML = day5.getDate() + " / " + day5.getMonth();
+                document.querySelector("#days5").innerHTML = day5.getDate() + " / " + (day5.getMonth() + 1);
                 
                 // Affichage de la température pour les 5 jours à venir
                 document.querySelector("#cloud1").innerHTML = Math.round(clouds1) + "° C ";

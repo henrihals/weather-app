@@ -20,6 +20,6 @@ On clicking the SUBMIT button or pressing ENTER the application will display the
 
 HTML - SASS - JavaScript
 
-**Github : 
+**Github : https://github.com/henrihals/weather-app.git
 
 **Internet : 
