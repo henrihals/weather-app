@@ -1,0 +1,13 @@
+@mixin header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@mixin section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}

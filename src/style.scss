@@ -1,58 +1,14 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import "./base/reset";
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+@import "./base/variable";
+@import "./base/mixin";
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
     justify-content: center;
     text-align: center;
-    background-color: white;
+    background-color: $b;
     overflow: hidden;
 
     header {
@@ -60,33 +16,40 @@ body {
         margin-top: 40px;
         margin-right: auto;
         margin-left: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        @include header;
     }
 
     h1 {
         font-size: 100px;
-        color: black;
+        color: $g;
+    }
+
+    input {
+        background-color: $g;
+        font-size: 20px;
+    }
+
+    button {
+        background-color: $grey;
+        font-size: 20px;
     }
 
     main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 70px;
         margin-top: 50px;
         background-size: cover;
     }
 
-    i {
-        font-size: 48px;
-        color: black;
-        padding: 20px;
+    section {
+        @include section;
+        margin-bottom: 40px;
+        
+        div {
+            font-size: 32px;
+            color: $b;
+        
+        .border-new {
+            border: 1px solid $g;
+        }
     }
-
-    div {
-        font-size: 32px;
-        color: black;
-    }
+}
 }

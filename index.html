@@ -11,14 +11,43 @@
 <body>
     <header>
         <h1 class="nom">Weather</h1>
-        <input type="text" id="city1" class="ville1" value="ville : " onFocus="javascript:this.value=''">
+        <input type="text" id="city1" class="ville1" value="Choisissez la ville : " onFocus="javascript:this.value=''">
         <button class="submit" type="button">Submit</button>
     </header>
     <main>
-        <div id="clouds"></div>
-        <div id="temps"></div>
-        <div id="humidity"></div>
-        <div id="wind"></div>
+        <section>
+            <div id="icons"></div>
+            <div id="temps"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+        </section>
+        <section>
+            <div class="border-new">
+                <img id="img1" src="">
+                <p id="cloud1"></p>
+                <p id="days1"></p>
+            </div>
+            <div class="border-new">
+                <img id="img2" src="">
+                <p id="cloud2"></p>
+                <p id="days2"></p>
+            </div>
+            <div class="border-new">
+                <img id="img3" src="">
+                <p id="cloud3"></p>
+                <p id="days3"></p>
+            </div>
+            <div class="border-new">
+                <img id="img4" src="">
+                <p id="cloud4"></p>
+                <p id="days4"></p>
+            </div>
+            <div class="border-new">
+                <img id="img5" src="">
+                <p id="cloud5"></p>
+                <p id="days5"></p>
+            </div>
+        </section>
     </main>
     
     <script src="script.js"></script>
